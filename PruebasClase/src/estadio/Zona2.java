@@ -73,29 +73,27 @@ public class Zona2
         this.outZona = outZona;
     }
 
-    public void venderEntradas(int n)
-    {
-           this.numEntradas -= n;
+
+    
+    public void outZonas() {
+        System.out.println("" + this.outZona);
     }
 
-
-    public void opcion1()
+    public void numEntradas()
     {
-        System.out.println("Numero de entradas libres en cada zona:");
-        System.out.println("" + this.outZona + this.numEntradas);
+        System.out.println("" + this.outZona +"  " + this.numEntradas);
     }
 
-    public void opcion2()
+    public void precios()
     {
-        System.out.println("El precio de la entrada es: ");
-        System.out.println("" + this.outZona + this.precios);
+        System.out.println("" + this.outZona + "  " + this.precios);
     }
 
-    public void opcion3(int num)
+    public void venderEntradas(int num)
     {
         if (num < numEntradas) {
             if (num > 0) {
-                venderEntradas(num);
+                this.numEntradas -= num;
                 System.out.println(
                     "La venta de sus " + num + " ha sido procesada correctamente.");
                 System.out.println("Desglose: ");
