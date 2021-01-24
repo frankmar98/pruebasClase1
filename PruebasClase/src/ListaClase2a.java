@@ -36,7 +36,7 @@ public class ListaClase2a
             for (int i = 0; i <= n - 1; i++) {
                 haSalido[i] = false;
             }
-            System.out.println("¡Enhorabuena!, ha salido toda la clase!! vuelta a empezar");
+            System.out.println("Enhorabuena!, ha salido toda la clase!! vuelta a empezar");
         }
         return haSalido;
     }
