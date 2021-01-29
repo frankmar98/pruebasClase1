@@ -17,9 +17,9 @@ public class Ejercicio32 {
 		n = palabra.length();
 		n2 = (int) (palabra.length() / 2) + 1;
 		for (int i = 0; i < n2; i++) {
-			es = palabra.charAt(i) == palabra.charAt(n-i-1);
+			es = palabra.charAt(i) == palabra.charAt(n - i - 1);
 			if (!es) {
-				esPalindromo= false;
+				esPalindromo = false;
 				break;
 			}
 		}

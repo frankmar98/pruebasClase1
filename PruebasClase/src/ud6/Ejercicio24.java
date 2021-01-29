@@ -10,7 +10,7 @@ public class Ejercicio24 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Introduzca la frase: ");
 		frase = sc.nextLine();
-		for (int i=0; i<frase.length();i++) {
+		for (int i = 0; i < frase.length(); i++) {
 			System.out.print("" + frase.charAt(i));
 			if (frase.charAt(i) == ' ') {
 				System.out.println("");
