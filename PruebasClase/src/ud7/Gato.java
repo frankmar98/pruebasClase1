@@ -57,6 +57,13 @@ public class Gato {
 			this.nombre = nombre;
 		}
 	}
+	@Override
+	public String toString() {
+		String s="";
+		s+="El nombre del gato es " + this.nombre + "\n";
+		s+="La edad del gato es " + this.edad + "\n";
+		return s;
+	}
 	
 	
 }
