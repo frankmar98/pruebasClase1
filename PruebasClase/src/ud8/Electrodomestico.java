@@ -37,11 +37,11 @@ public class Electrodomestico {
 			this.peso = PESO_DEFECTO;
 			throw ePesoNegativo;
 		} else {
-			this.precioBase = precioBase;
-			this.color = COLOR_DEFECTO;
-			this.consumo = CONSUMO_DEFECTO;
-			this.precioBase = peso;
+			this.peso = peso;
 		}
+		this.precioBase = precioBase;
+		this.color = COLOR_DEFECTO;
+		this.consumo = CONSUMO_DEFECTO;
 	}
 
 	public Electrodomestico(double precioBase, Color color, Consumo consumo, int peso) throws Exception {
@@ -81,7 +81,7 @@ public class Electrodomestico {
 		default:
 			precioFinal += 10.0;
 		}
-		
+
 		if (peso > 0 && peso < 20) {
 			precioFinal += 10.0;
 		} else if (peso >= 20 && peso < 50) {
