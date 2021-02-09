@@ -50,11 +50,11 @@ public class Electrodomestico {
 			this.peso = PESO_DEFECTO;
 			throw ePesoNegativo;
 		} else {
-			this.precioBase = precioBase;
-			this.color = color;
-			this.consumo = consumo;
-			this.precioBase = peso;
+			this.peso = peso;
 		}
+		this.precioBase = precioBase;
+		this.color = color;
+		this.consumo = consumo;
 	}
 
 	public double precioFinal() {
