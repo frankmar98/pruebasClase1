@@ -33,28 +33,29 @@ public class Electrodomestico {
 
 	public Electrodomestico(double precioBase, int peso) throws Exception {
 		super();
+		this.precioBase = precioBase;
+		this.color = COLOR_DEFECTO;
+		this.consumo = CONSUMO_DEFECTO;
 		if (peso < 0) {
 			this.peso = PESO_DEFECTO;
 			throw ePesoNegativo;
 		} else {
 			this.peso = peso;
 		}
-		this.precioBase = precioBase;
-		this.color = COLOR_DEFECTO;
-		this.consumo = CONSUMO_DEFECTO;
 	}
 
 	public Electrodomestico(double precioBase, Color color, Consumo consumo, int peso) throws Exception {
 		super();
+		this.precioBase = precioBase;
+		this.color = color;
+		this.consumo = consumo;
 		if (peso < 0) {
 			this.peso = PESO_DEFECTO;
 			throw ePesoNegativo;
 		} else {
 			this.peso = peso;
 		}
-		this.precioBase = precioBase;
-		this.color = color;
-		this.consumo = consumo;
+		
 	}
 
 	public double precioFinal() {

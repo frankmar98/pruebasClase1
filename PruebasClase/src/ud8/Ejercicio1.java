@@ -9,7 +9,6 @@ public class Ejercicio1 {
 		Linea l2 = new Linea(p1,p2);
 		System.out.println(l1);
 		System.out.println(l2);
-
 	}
 
 }
